@@ -1,0 +1,9 @@
+_site
+node_modules
+.DS_Store
+.idea
+temp
+coverage
+demo
+vega-scenegraph.js
+vega-scenegraph.min.js

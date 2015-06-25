@@ -1,0 +1,26 @@
+{
+  "name": "vega-logging",
+  "version": "1.0.0",
+  "description": "Vega logging utility methods.",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/vega/vega-logging.git"
+  },
+  "author": {
+    "name": "Arvind Satyanarayan",
+    "url": "http://arvindsatya.com/"
+  },
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "browserify": "latest",
+    "browserify-shim": "latest",
+    "jshint": "latest",
+    "uglify-js": "latest"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js",
+    "build": "browserify index.js --debug --standalone vg.logging -o vega-logging.js",
+    "postbuild": "uglifyjs vega-logging.js -c -m -o vega-logging.min.js"
+  }
+}
