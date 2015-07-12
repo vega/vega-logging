@@ -1,12 +1,12 @@
-var ts;
+var ts = Date.now();
 
 function write(msg) {
-  msg = "[Vega Log] " + msg;
+  msg = '[Vega Log] ' + msg;
   console.log(msg);
 }
 
 function error(msg) {
-  msg = "[Vega Err] " + msg;
+  msg = '[Vega Err] ' + msg;
   console.error(msg);
 }
 
@@ -30,7 +30,7 @@ function debug(input, args) {
 }
 
 module.exports = {
-  log: write,
+  log:   write,
   error: error,
   debug: (debug.enable = false, debug)
 };

@@ -1,3 +1,3 @@
 # vega-logging
 
-Vega logging utilies.
+Vega logging utilities.

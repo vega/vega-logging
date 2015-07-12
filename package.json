@@ -8,19 +8,18 @@
   },
   "author": {
     "name": "Arvind Satyanarayan",
-    "url": "http://arvindsatya.com/"
+    "url": "http://arvindsatya.com"
   },
   "license": "BSD-3-Clause",
   "devDependencies": {
     "browserify": "latest",
-    "browserify-shim": "latest",
     "jshint": "latest",
     "uglify-js": "latest"
   },
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js",
-    "build": "browserify index.js --debug --standalone vg.logging -o vega-logging.js",
-    "postbuild": "uglifyjs vega-logging.js -c -m -o vega-logging.min.js"
+    "build": "browserify index.js -s vg.log -o vega-logging.js",
+    "postbuild": "uglifyjs vega-logging.js -cm > vega-logging.min.js"
   }
 }
