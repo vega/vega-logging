@@ -1,13 +1,11 @@
 var ts = Date.now();
 
 function write(msg) {
-  msg = '[Vega Log] ' + msg;
-  console.log(msg);
+  console.log('[Vega Log]', msg);
 }
 
 function error(msg) {
-  msg = '[Vega Err] ' + msg;
-  console.error(msg);
+  console.error('[Vega Err]', msg);
 }
 
 function debug(input, args) {
